@@ -240,21 +240,6 @@
     "observacoes": "Peso: 5.0 kg, Potência: 0.95 kW / 1.3 HP."
   },
   {
-    "id": "stihl-ka-120-r",
-    "slug": "stihl-ka-120-r",
-    "nome_completo": "Ferramenta Multifuncional STIHL KA 120 R",
-    "marca": "STIHL",
-    "categoria": "Ferramenta Multifuncional",
-    "subcategoria": "A combustão",
-    "modelo": "KA 120 R",
-    "descricao_curta": "Unidade motora multifuncional de alta potência para uso profissional intenso.",
-    "descricao_media": "A STIHL KA 120 R oferece maior potência para o sistema multifuncional, sendo indicada para tarefas pesadas que exigem alto rendimento com diferentes implementos acoplados.",
-    "imagem": "https://www.stihl.com.br/content/dam/stihl/media/pim/149292.jpg",
-    "link_fabricante": "https://www.stihl.com.br/pt/ap/ferramenta-multifuncional-ka-120-r-97236",
-    "fonte_confirmada": true,
-    "observacoes": "Peso: 6.3 kg, Potência: 1.3 kW / 1.8 HP."
-  },
-  {
     "id": "stihl-re-80",
     "slug": "stihl-re-80",
     "nome_completo": "Lavadora de alta pressão STIHL RE 80",
@@ -345,36 +330,6 @@
     "observacoes": "Volume de ar: 850 m³/h, Velocidade do ar: 82 m/s."
   },
   {
-    "id": "stihl-bg-50",
-    "slug": "stihl-bg-50",
-    "nome_completo": "Soprador manual STIHL BG 50",
-    "marca": "STIHL",
-    "categoria": "Soprador",
-    "subcategoria": "A combustão",
-    "modelo": "BG 50",
-    "descricao_curta": "Soprador manual leve e compacto, ideal para limpeza residencial rápida.",
-    "descricao_media": "A STIHL BG 50 combina leveza e potência em um design ergonômico. Perfeito para limpar calçadas e jardins domésticos com rapidez e eficiência.",
-    "imagem": "https://www.stihl.com.br/content/dam/stihl/media/pim/40436.jpg",
-    "link_fabricante": "https://www.stihl.com.br/pt/ap/soprador-bg-50-65814",
-    "fonte_confirmada": true,
-    "observacoes": "Peso: 3.6 kg, Volume de ar: 700 m³/h."
-  },
-  {
-    "id": "stihl-bg-56",
-    "slug": "stihl-bg-56",
-    "nome_completo": "Soprador manual STIHL BG 56",
-    "marca": "STIHL",
-    "categoria": "Soprador",
-    "subcategoria": "A combustão",
-    "modelo": "BG 56",
-    "descricao_curta": "Soprador manual potente com baixa emissão de gases para uso ocasional.",
-    "descricao_media": "A STIHL BG 56 é equipada com motor 2-MIX, oferecendo alto desempenho com menor consumo de combustível. Ideal para limpeza de áreas externas residenciais e comerciais leves.",
-    "imagem": "https://www.stihl.com.br/content/dam/stihl/media/pim/2456.jpg",
-    "link_fabricante": "https://www.stihl.com.br/pt/ap/soprador-bg-56-2454",
-    "fonte_confirmada": true,
-    "observacoes": "Peso: 4.1 kg, Volume de ar: 710 m³/h."
-  },
-  {
     "id": "stihl-bge-71",
     "slug": "stihl-bge-71",
     "nome_completo": "Soprador elétrico STIHL BGE 71",
@@ -388,36 +343,6 @@
     "link_fabricante": "https://www.stihl.com.br/pt/ap/soprador-eletrico-bge-71-105",
     "fonte_confirmada": true,
     "observacoes": "Potência: 1.1 kW, Peso: 3.0 kg."
-  },
-  {
-    "id": "stihl-gta-26",
-    "slug": "stihl-gta-26",
-    "nome_completo": "Podadora a bateria STIHL GTA 26",
-    "marca": "STIHL",
-    "categoria": "Podadora",
-    "subcategoria": "A bateria",
-    "modelo": "GTA 26",
-    "descricao_curta": "Mini podadora a bateria versátil para poda de árvores e arbustos.",
-    "descricao_media": "A STIHL GTA 26 é uma ferramenta inovadora para poda de pequenos galhos e trabalhos de marcenaria. Extremamente compacta e fácil de usar, faz parte do sistema AS de baterias.",
-    "imagem": "https://www.stihl.com.br/content/dam/stihl/media/pim/11107.jpg",
-    "link_fabricante": "https://www.stihl.com.br/pt/ap/podadora-a-bateria-gta-26-95855",
-    "fonte_confirmada": true,
-    "observacoes": "Comprimento do sabre: 10 cm, Peso: 1.2 kg."
-  },
-  {
-    "id": "stihl-hsa-26",
-    "slug": "stihl-hsa-26",
-    "nome_completo": "Tesoura de arbustos a bateria STIHL HSA 26",
-    "marca": "STIHL",
-    "categoria": "Podadora",
-    "subcategoria": "A bateria",
-    "modelo": "HSA 26",
-    "descricao_curta": "Tesoura de arbustos leve e precisa para acabamentos em jardins.",
-    "descricao_media": "A STIHL HSA 26 é ideal para o cuidado detalhado de arbustos e bordas de gramados. Acompanha lâminas para arbustos e para grama, oferecendo versatilidade no jardim residencial.",
-    "imagem": "https://www.stihl.com.br/content/dam/stihl/media/pim/11110.jpg",
-    "link_fabricante": "https://www.stihl.com.br/pt/ap/tesoura-de-arbustos-a-bateria-hsa-26-95856",
-    "fonte_confirmada": true,
-    "observacoes": "Comprimento da lâmina: 20 cm (arbustos), Peso: 0.8 kg."
   },
   {
     "id": "stihl-hs-45",
@@ -478,21 +403,6 @@
     "link_fabricante": "https://www.stihl.com.br/pt/ap/pulverizador-costal-manual-sg-20-2132",
     "fonte_confirmada": true,
     "observacoes": "Capacidade: 18 l, Peso: 5.2 kg."
-  },
-  {
-    "id": "stihl-sg-31",
-    "slug": "stihl-sg-31",
-    "nome_completo": "Pulverizador manual STIHL SG 31",
-    "marca": "STIHL",
-    "categoria": "Pulverizador",
-    "subcategoria": "Manual",
-    "modelo": "SG 31",
-    "descricao_curta": "Pulverizador manual de ombro para manutenção de jardins e controle de pragas.",
-    "descricao_media": "O STIHL SG 31 oferece conforto com sua alça de ombro e lança telescópica opcional. Ideal para usuários que buscam eficiência em áreas de médio alcance.",
-    "imagem": "https://www.stihl.com.br/content/dam/stihl/media/pim/40436.jpg",
-    "link_fabricante": "https://www.stihl.com.br/pt/ap/pulverizador-manual-sg-31-2133",
-    "fonte_confirmada": true,
-    "observacoes": "Capacidade: 5 l, Pressão máxima: 3 bar."
   },
   {
     "id": "stihl-ehc-605",
