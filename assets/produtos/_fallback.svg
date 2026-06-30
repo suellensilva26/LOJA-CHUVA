@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-label="Imagem em breve - Loja Chuva">
+  <rect width="600" height="450" fill="#eef3f9"/>
+  <rect width="600" height="450" fill="url(#g)"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f8fc"/>
+      <stop offset="1" stop-color="#e2ebf4"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="300" y1="150" x2="300" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3AA0E3"/><stop offset="1" stop-color="#1366AE"/>
+    </linearGradient>
+    <clipPath id="clip"><path d="M300 150c0 0-52 56-52 89a52 52 0 0 0 104 0c0-33-52-89-52-89Z"/></clipPath>
+  </defs>
+  <path d="M300 150c0 0-52 56-52 89a52 52 0 0 0 104 0c0-33-52-89-52-89Z" fill="url(#drop)"/>
+  <g clip-path="url(#clip)"><path d="M240 268c40-20 64 12 96 6s60 6 84 2v40H240Z" fill="#5FB733"/></g>
+  <path d="M281 207a14 14 0 0 1 26-3 10.4 10.4 0 0 1 1 20h-25a10.7 10.7 0 0 1-2-17Z" fill="#fff"/>
+  <text x="300" y="345" text-anchor="middle" font-family="Archivo, Arial, sans-serif" font-size="26" font-weight="700" fill="#0a4a7d">Loja Chuva</text>
+  <text x="300" y="375" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" fill="#5a6b7a">Imagem em breve</text>
+</svg>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto | Loja Chuva</title>
+  <meta name="description" content="Detalhes do produto na Loja Chuva." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" href="assets/logo/logo-loja-chuva.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER (comum) ===================== -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html" aria-label="Loja Chuva - página inicial">
+        <img class="site-header__logo-img" src="assets/logo/logo-loja-chuva-horizontal.png" alt="Loja Chuva">
+      </a>
+      <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" data-nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Produtos</a></li>
+          <li><a href="index.html#servicos">Serviços</a></li>
+          <li><a href="index.html#sobre">Sobre</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===================== CONTEUDO ===================== -->
+  <main>
+    <section class="page-section">
+      <div class="container">
+        <!-- Conteudo renderizado via produto.js a partir do ?id= da URL -->
+        <div data-product>
+          <p class="empty-state">Carregando produto...</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER (comum) ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <h4>Loja Chuva</h4>
+          <p>Máquinas e equipamentos para jardinagem, sítio e área rural.</p>
+        </div>
+        <div>
+          <h4>Links rápidos</h4>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="catalogo.html">Produtos</a></li>
+            <li><a href="index.html#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Atendimento</h4>
+          <p>WhatsApp: (22) 98812-8459</p>
+          <p>Rod. Amaral Peixoto, 90108 – Vila Capri</p>
+          <p>Araruama – RJ</p>
+          <div class="site-footer__social">
+            <a href="https://www.instagram.com/lojachuvamaquinas/" target="_blank" rel="noopener" aria-label="Instagram da Loja Chuva">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="https://www.facebook.com/LOJACHUVA/?locale=pt_BR" target="_blank" rel="noopener" aria-label="Facebook da Loja Chuva">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+            </a>
+            <a data-whatsapp-generic href="#" target="_blank" rel="noopener" aria-label="WhatsApp da Loja Chuva">
+              <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.55 4.18 1.6 6L4 29l8.16-1.55a12 12 0 0 0 3.88.64h.01C22.69 28.09 28 22.69 28 16.05 28 9.4 22.68 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-3.4-.58l-.24-.1-4.84.92.92-4.72-.16-.25a9.94 9.94 0 0 1-1.52-5.3c0-5.5 4.48-9.98 9.99-9.98 2.67 0 5.18 1.04 7.06 2.93a9.9 9.9 0 0 1 2.93 7.06c0 5.5-4.48 9.98-9.99 9.98zm5.48-7.48c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.89 1.23 3.09.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.71.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        &copy; <span data-current-year>2026</span> Loja Chuva. Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" data-whatsapp-float href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.04 3C9.4 3 4 8.4 4 15.04c0 2.12.55 4.18 1.6 6L4 29l8.16-1.55a12 12 0 0 0 3.88.64h.01C22.69 28.09 28 22.69 28 16.05 28 9.4 22.68 3 16.04 3zm0 21.9h-.01a10 10 0 0 1-3.4-.58l-.24-.1-4.84.92.92-4.72-.16-.25a9.94 9.94 0 0 1-1.52-5.3c0-5.5 4.48-9.98 9.99-9.98 2.67 0 5.18 1.04 7.06 2.93a9.9 9.9 0 0 1 2.93 7.06c0 5.5-4.48 9.98-9.99 9.98zm5.48-7.48c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.8.37-.27.3-1.05 1.02-1.05 2.5 0 1.47 1.08 2.89 1.23 3.09.15.2 2.12 3.24 5.14 4.54.72.31 1.28.5 1.71.64.72.23 1.38.2 1.9.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35z"/></svg>
+  </a>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <!-- Ordem importa: data-loader.js -> main.js -> produto.js -->
+  <script src="js/data-loader.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/produto.js"></script>
+</body>
+</html>
