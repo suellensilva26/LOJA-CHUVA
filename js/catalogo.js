@@ -23,6 +23,8 @@
     subcategoria: "",
     sort: "relevancia",
     shown: PER_PAGE,
+    uso: "",
+    usoCats: [],
   };
 
   let ALL = [];
@@ -69,12 +71,21 @@
     });
   }
 
-  // Pre-aplica filtros vindos da URL: ?marca= , ?categoria= , ?busca=
+  // Mapeamento de "tipo de uso" para conjuntos de categorias do catálogo.
+  const USO_MAP = {
+    jardinagem: ["Motosserra", "Roçadeira", "Podador", "Podadora", "Podador de altura", "Podador de cerca viva", "Motopoda", "Aparador de grama", "Ferramenta Multifuncional"],
+    agricola:   ["Motocultivador", "Motobomba", "Pulverizador", "Motor Estacionário"],
+    quintal:    ["Lavadora de alta pressão", "Soprador", "Furadeira", "Gerador"],
+    camping:    ["Gerador"],
+  };
+
+  // Pre-aplica filtros vindos da URL: ?marca= , ?categoria= , ?busca= , ?uso=
   function applyUrlParams() {
     const p = new URLSearchParams(window.location.search);
     const marca = p.get("marca");
     const categoria = p.get("categoria");
     const busca = p.get("busca");
+    const uso = p.get("uso");
     if (marca && ALL.some((x) => x.marca === marca)) {
       state.brands.add(marca);
       syncBrandPills();
@@ -87,6 +98,10 @@
     if (busca) {
       state.search = busca;
       if (els.search) els.search.value = busca;
+    }
+    if (uso && USO_MAP[uso]) {
+      state.uso = uso;
+      state.usoCats = USO_MAP[uso];
     }
   }
 
@@ -242,7 +257,10 @@
   }
 
   function removeFilter(type, value) {
-    if (type === "search") {
+    if (type === "uso") {
+      state.uso = "";
+      state.usoCats = [];
+    } else if (type === "search") {
       state.search = "";
       if (els.search) els.search.value = "";
     } else if (type === "brand") {
@@ -267,6 +285,8 @@
     state.brands.clear();
     state.categoria = "";
     state.subcategoria = "";
+    state.uso = "";
+    state.usoCats = [];
     if (els.search) els.search.value = "";
     if (els.category) els.category.value = "";
     syncBrandPills();
@@ -285,6 +305,7 @@
     const q = norm(state.search);
     let list = ALL.filter(function (p) {
       if (state.brands.size && !state.brands.has(p.marca)) return false;
+      if (state.usoCats.length && state.usoCats.indexOf(p.categoria) === -1) return false;
       if (state.categoria && p.categoria !== state.categoria) return false;
       if (state.subcategoria && p.subcategoria !== state.subcategoria) return false;
       if (q) {
@@ -354,9 +375,17 @@
     }
   }
 
+  const USO_LABELS = {
+    jardinagem: "Jardinagem",
+    agricola:   "Máquinas Agrícolas",
+    quintal:    "Quintal e Casa",
+    camping:    "Camping",
+  };
+
   function renderActiveChips() {
     if (!els.active) return;
     const chips = [];
+    if (state.uso) chips.push(chip("Uso: " + (USO_LABELS[state.uso] || state.uso), "uso", ""));
     if (state.search) chips.push(chip("Busca: " + state.search, "search", ""));
     state.brands.forEach((m) => chips.push(chip("Marca: " + m, "brand", m)));
     if (state.categoria) chips.push(chip("Categoria: " + state.categoria, "categoria", ""));
